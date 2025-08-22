@@ -23,7 +23,7 @@ body {
 
 header {
   background: var(--dark-blue);
-  border-bottom: 1px solid #f1f1f1;
+  padding: 25px 0;
 }
 
 h1 {
