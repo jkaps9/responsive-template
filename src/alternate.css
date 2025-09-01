@@ -7,8 +7,25 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 21px;
+  font-size: 1.3125rem; /* 21px */
   font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+  font-family: "Playfair Display";
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+section {
+  padding: 4em 0;
 }
 
 .container {
@@ -33,10 +50,6 @@ body {
   color: #824936;
 }
 
-img {
-  max-width: 100%;
-}
-
 /* HERO */
 .hero {
   background: #f3eed9;
@@ -57,22 +70,12 @@ img {
 }
 
 .hero__title {
-  margin-top: 0;
-  font-weight: 900;
   font-size: 60px;
-  font-family: "Playfair Display";
-  line-height: 1em;
 }
 
 /* MAIN */
-section {
-  padding: 5rem 0;
-}
-
 .section__title {
-  font-weight: 900;
   font-size: 36px;
-  font-family: "Playfair Display";
 }
 
 .section__title--center {
