@@ -65,6 +65,8 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1em;
 }
 
 .nav__list {
