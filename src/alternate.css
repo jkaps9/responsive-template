@@ -30,12 +30,14 @@ body {
 /* HERO */
 .hero {
   background: #f3eed9;
+  text-align: center;
 }
 
 .hero__content {
   min-height: 660px;
+  max-width: 800px;
   justify-content: center;
-  align-items: center;
+  gap: 1em;
 }
 
 .hero__topper {
@@ -43,4 +45,11 @@ body {
   letter-spacing: 0.5em;
   font-weight: 300;
   font-size: 18px;
+}
+
+.hero__title {
+  color: #824936;
+  font-weight: 900;
+  font-size: 60px;
+  font-family: "Playfair Display";
 }
