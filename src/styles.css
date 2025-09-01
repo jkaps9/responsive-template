@@ -74,7 +74,7 @@ header {
 
 .logo {
   display: flex;
-  margin-right: 1em;
+  /* margin-right: 1em; needed if not centering the primary nav*/
 }
 
 header > .row {
@@ -94,6 +94,10 @@ header > .row {
   list-style: none;
   display: flex;
   gap: 1em;
+}
+
+.nav__list--primary {
+  margin: 0 auto;
 }
 
 .nav__link {
