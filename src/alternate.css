@@ -73,3 +73,13 @@ section {
 .section__title--center {
   text-align: center;
 }
+
+section.customize {
+  background: #222c2a;
+  color: #ffffff;
+}
+
+section.care {
+  background: #824936;
+  color: #ffffff;
+}
