@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Template</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--button">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
       <div class="container row">
         <div class="hero__text">
           <h1>Responsive layouts don't have to be a struggle</h1>
@@ -22,7 +40,7 @@
           <img src="./assets/images/hero-img.jpg" alt="website sketches" />
         </div>
       </div>
-    </header>
+    </section>
 
     <main class="main container row">
       <section class="main-content">
