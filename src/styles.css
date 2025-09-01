@@ -83,8 +83,12 @@ img {
   opacity: 0.75;
 }
 
+.main {
+  margin-top: 3em;
+}
+
 .main-content {
-  padding: 3em 0;
+  width: 62%;
 }
 
 .accent-text {
@@ -101,10 +105,6 @@ img {
   flex-direction: column;
 }
 
-.main__text {
-  padding: 1em 0;
-}
-
 .section__title {
   color: var(--medium-blue);
   font-size: 2.25rem;
@@ -112,8 +112,9 @@ img {
 }
 
 .sidebar {
-  padding: 1em;
-  background-color: var(--medium-blue);
-  color: #fff;
+  width: 32%;
   text-align: center;
+  color: #fff;
+  background-color: var(--medium-blue);
+  padding: 1em;
 }
