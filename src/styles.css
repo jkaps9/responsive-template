@@ -58,7 +58,7 @@ img {
 
 /* HEADER */
 header {
-  background: var(--dark-blue);
+  background: var(--medium-blue);
   padding: 1em 0;
 }
 
@@ -67,7 +67,7 @@ header {
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
 
 .nav__link {
