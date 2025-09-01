@@ -59,7 +59,7 @@ img {
 /* HEADER */
 header {
   background: var(--dark-blue);
-  padding: 0.5em 0;
+  padding: 1em 0;
 }
 
 .nav__list {
