@@ -33,6 +33,10 @@ body {
   color: #824936;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* HERO */
 .hero {
   background: #f3eed9;
