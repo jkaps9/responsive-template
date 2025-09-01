@@ -36,6 +36,16 @@ img {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn--solid {
   display: inline-block;
   text-decoration: none;
@@ -62,11 +72,21 @@ header {
   padding: 1em 0;
 }
 
+.logo {
+  display: flex;
+  margin-right: 1em;
+}
+
+header > .row {
+  align-items: center;
+  border: 1px solid yellow;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 1em;
+  flex-grow: 1;
 }
 
 .nav__list {
@@ -127,16 +147,6 @@ header {
 
 .main-content {
   width: 62%;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
 }
 
 .section__title {
