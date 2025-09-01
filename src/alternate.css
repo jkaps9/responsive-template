@@ -1,11 +1,11 @@
 *,
 *::before,
 *::after {
-  margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -20,11 +20,17 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.accent-text {
+  color: #824936;
 }
 
 /* HERO */
@@ -48,8 +54,22 @@ body {
 }
 
 .hero__title {
-  color: #824936;
   font-weight: 900;
   font-size: 60px;
   font-family: "Playfair Display";
+}
+
+/* MAIN */
+section {
+  padding: 2em 0;
+}
+
+.section__title {
+  font-weight: 900;
+  font-size: 36px;
+  font-family: "Playfair Display";
+}
+
+.section__title--center {
+  text-align: center;
 }
