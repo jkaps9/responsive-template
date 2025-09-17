@@ -166,3 +166,32 @@ header > .row {
   background-color: var(--medium-blue);
   padding: 1em;
 }
+
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+
+  .hero__text,
+  .hero__image,
+  .main-content,
+  .sidebar {
+    width: 100%;
+  }
+
+  .hero__image {
+    margin-top: 2em;
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__list--primary {
+    margin: 1em 0 0;
+  }
+}
