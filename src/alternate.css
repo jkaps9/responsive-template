@@ -35,18 +35,6 @@ section {
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
 .accent-text {
   color: #824936;
 }
@@ -68,15 +56,17 @@ section {
   letter-spacing: 10px;
   font-weight: 300;
   font-size: 1.125rem; /* 18px */
+  margin: 0 0 0.25em;
 }
 
 .hero__title {
-  font-size: 3.75rem; /* 60px */
+  font-size: 3rem; /* 60px */
 }
 
 /* MAIN */
 .section__title {
   font-size: 2.25rem; /* 36px */
+  color: #f3eed9;
 }
 
 .section__title--center {
@@ -85,10 +75,27 @@ section {
 
 section.customize {
   background: #222c2a;
-  color: #f3eed9;
+  color: #fff;
 }
 
 section.care {
   background: #824936;
-  color: #f3eed9;
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  .hero__title {
+    font-size: 3.75rem; /* 60px */
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
 }
