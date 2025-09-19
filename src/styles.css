@@ -34,16 +34,8 @@ img {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-}
 
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .btn--solid {
@@ -51,7 +43,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--dark-blue);
-  font-weight: 700;
+  font-weight: 900;
   background: var(--light-blue);
   padding: 0.75em 2em;
   border-radius: 100px;
@@ -70,22 +62,69 @@ img {
 header {
   background: var(--medium-blue);
   padding: 1em 0;
+  text-align: center;
 }
 
 .logo {
-  display: flex;
+  height: 30px;
   /* margin-right: 1em; needed if not centering the primary nav*/
 }
 
-header > .row {
-  align-items: center;
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
-  flex-grow: 1;
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+display: flex;
+  flex-direction: column;
+  gap: 2em;
+
 }
 
 .nav__list {
@@ -93,12 +132,21 @@ header > .row {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 
-.nav__list--primary {
-  margin: 0 auto;
+  .nav__list--primary {
+    margin: 1em 0 0;
+  }
+
+
+.nav.visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
 }
+
 
 .nav__link {
   color: #fff;
@@ -111,12 +159,18 @@ header > .row {
   color: #136c72;
   padding: 0.25em 1em;
   border-radius: 10em;
+  font-weight: 900;
 }
 
 .nav__link:hover {
   opacity: 0.75;
 }
-
+.hero__text,
+.hero__image,
+.main-content,
+.sidebar {
+  width: 100%;
+}
 /* HERO */
 
 .hero {
@@ -125,32 +179,20 @@ header > .row {
   color: #fff;
 }
 
-.hero__text,
-.main__text {
-  width: 63%;
-}
-
 .hero p {
   margin-bottom: 3em;
 }
 
-.hero__image,
-.main__aside {
-  width: 35%;
-}
-
 .hero__image {
-  align-self: flex-start;
+  margin-top: 2em;
 }
 
 /* MAIN */
 .main {
-  margin-top: 3em;
+  margin-too: 3rem;
+  margin-bottom: 3rem;
 }
 
-.main-content {
-  width: 62%;
-}
 
 .section__title {
   color: var(--medium-blue);
@@ -160,27 +202,35 @@ header > .row {
 
 /* ASIDE */
 .sidebar {
-  width: 32%;
+
   text-align: center;
   color: #fff;
   background-color: var(--medium-blue);
   padding: 1em;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 800px) {
   .row {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
   }
 
   .hero__text,
+  .main__text {
+    width: 63%;
+  }
   .hero__image,
-  .main-content,
-  .sidebar {
-    width: 100%;
+  .main__aside {
+    width: 35%;
   }
 
   .hero__image {
-    margin-top: 2em;
+    margin-top: 0;
   }
 
   .nav {
@@ -191,7 +241,16 @@ header > .row {
     flex-direction: column;
   }
 
-  .nav__list--primary {
-    margin: 1em 0 0;
+
+.nav__list--primary {
+  margin: 0 auto;
+}
+
+.main-content {
+  width: 62%;
+}
+
+  .sidebar {
+     width: 32%;
   }
 }
