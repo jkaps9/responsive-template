@@ -194,7 +194,6 @@ header {
 }
 
 .section__title {
-  color: var(--medium-blue);
   font-size: 2.25rem;
   font-weight: 900;
 }
