@@ -34,13 +34,53 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .container {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* HEADER */
+header {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  position: relative;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 @media (min-width: 700px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
 }
 
 @media (min-width: 1000px) {
