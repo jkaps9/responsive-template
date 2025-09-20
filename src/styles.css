@@ -207,16 +207,14 @@ header {
 }
 
 @media (min-width: 800px) {
+  header {
+    padding: 2em 0;
+  }
+
   .row {
     display: flex;
     justify-content: space-between;
   }
-
-  .col {
-    display: flex;
-    flex-direction: column;
-  }
-
   .hero__text,
   .main__text {
     width: 63%;
@@ -232,14 +230,26 @@ header {
 
   .nav {
     align-items: center;
+    visibility: visible;
+    height: auto;
+    position: relative;
+
+    flex-direction: row;
+    margin-bottom: 0;
   }
 
   .nav__list {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .nav__list--primary {
     margin: 0 auto;
+  }
+
+  .nav-toggle {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
   }
 
   .main-content {
