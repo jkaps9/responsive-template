@@ -28,6 +28,7 @@ h5,
 h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
+  margin-top: 0;
 }
 
 img {
@@ -59,6 +60,10 @@ ul {
   color: inherit;
   border-radius: 100px;
   font: inherit;
+}
+
+.accent-text {
+  color: var(--color-accent) !important;
 }
 
 /* HEADER */
@@ -146,6 +151,12 @@ header {
 
 .hamburger::after {
   transform: translateY(3px);
+}
+
+/* HERO */
+.hero {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 @media (min-width: 700px) {
