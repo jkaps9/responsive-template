@@ -198,6 +198,39 @@ h1 {
   }
 }
 
+/* Section three */
+.section-three {
+  h2 {
+    font-size: clamp(1.5rem, 1.1591rem + 1.4545vw, 2.25rem);
+  }
+
+  p {
+    font-size: 1.3125rem;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+.sidebar > div {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.5rem;
+}
+
 @media (min-width: 700px) {
 }
 
@@ -247,5 +280,15 @@ h1 {
 
   .section-two > .row > div:nth-child(2) {
     margin: 0;
+  }
+
+  .section-three {
+    .main-content {
+      width: 57%;
+    }
+
+    .sidebar {
+      width: 30%;
+    }
   }
 }
