@@ -154,10 +154,27 @@ header {
     justify-content: space-between;
   }
 
+  header > .row {
+    align-items: center;
+  }
+
   .nav-toggle {
     visibility: hidden;
     height: 0;
     position: absolute;
+  }
+
+  .nav {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
+
+  .nav,
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
   }
 }
 
