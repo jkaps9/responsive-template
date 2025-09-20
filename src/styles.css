@@ -24,6 +24,7 @@ body {
 h1 {
   font-size: 3rem;
   margin-top: 0;
+  line-height: 1.2;
 }
 
 img {
@@ -124,6 +125,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2em;
+
+  margin-bottom: 2rem;
 }
 
 .nav__list {
