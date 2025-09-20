@@ -48,6 +48,8 @@ ul {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+
+  position: relative;
 }
 
 .btn--solid {
@@ -63,7 +65,7 @@ ul {
 header {
   background-color: var(--color-primary-dark);
   color: var(--color-white);
-  position: relative;
+
   padding: 1em 0;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -76,12 +78,74 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1em;
+
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav.visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.logo {
+  height: 30px;
+  /* margin-right: 1em; needed if not centering the primary nav*/
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
 }
 
 @media (min-width: 700px) {
