@@ -179,4 +179,7 @@ header {
 }
 
 @media (min-width: 1000px) {
+  .nav__list {
+    gap: 2em;
+  }
 }
