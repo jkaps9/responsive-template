@@ -90,11 +90,13 @@ header {
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 
   visibility: hidden;
   height: 0;
   position: absolute;
+
+  margin: 2em 0;
 }
 
 .nav.visible {
@@ -295,6 +297,8 @@ footer {
     visibility: visible;
     height: auto;
     position: relative;
+
+    gap: 4em;
   }
 
   .nav,
@@ -305,7 +309,7 @@ footer {
   }
 
   .nav__list {
-    gap: 2em;
+    gap: 3em;
   }
 
   .hero {
