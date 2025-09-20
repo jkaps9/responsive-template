@@ -227,6 +227,7 @@ header {
 
   .hero__image {
     margin-top: 0;
+    margin-left: 2em;
   }
 
   .nav {
