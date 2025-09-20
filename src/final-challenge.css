@@ -36,6 +36,7 @@ img {
 
 a {
   text-decoration: none;
+  font: inherit;
   color: inherit;
 }
 
@@ -49,6 +50,15 @@ ul {
   margin: 0 auto;
 }
 
+.btn--solid {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background-color: var(--color-accent);
+  color: inherit;
+  border-radius: 100px;
+  font: inherit;
+}
+
 /* HEADER */
 header {
   background-color: var(--color-primary-dark);
@@ -56,6 +66,10 @@ header {
   position: relative;
   padding: 1em 0;
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 .nav {
