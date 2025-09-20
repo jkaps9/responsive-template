@@ -67,6 +67,10 @@ ul {
   color: var(--color-accent) !important;
 }
 
+section {
+  padding: 2em 0;
+}
+
 /* HEADER */
 header {
   background-color: var(--color-primary-dark);
@@ -160,22 +164,23 @@ header {
   color: var(--color-white);
 
   min-height: 24rem;
+
   place-content: center;
 
   p {
-    font-size: 1.5rem;
+    font-size: clamp(1.125rem, 0.9545rem + 0.7273vw, 1.5rem);
     opacity: 0.75;
   }
 
   .btn--solid {
-    font-size: 1.5rem;
+    font-size: clamp(1.125rem, 0.9545rem + 0.7273vw, 1.5rem);
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
   }
 }
 
 h1 {
-  font-size: 5.625rem;
+  font-size: clamp(3.5rem, 2.5341rem + 4.1212vw, 5.625rem);
   line-height: 1.1;
 }
 
