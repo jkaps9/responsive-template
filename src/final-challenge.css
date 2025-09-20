@@ -72,7 +72,12 @@ ul {
 
 section,
 footer {
-  padding: clamp(2rem, 1.0909rem + 3.8788vw, 4rem) 0;
+  padding: clamp(2rem, 0.6364rem + 5.8182vw, 5rem) 0;
+}
+
+a:hover,
+.btn--solid:hover {
+  opacity: 0.5;
 }
 
 /* HEADER */
@@ -345,18 +350,26 @@ footer {
 
   footer {
     text-align: start;
-  }
 
-  footer .about p {
-    max-width: 40ch;
-  }
+    h2 {
+      margin-bottom: 2em;
+    }
 
-  .footer-nav {
-    flex-grow: 1;
-  }
+    .about p {
+      max-width: 40ch;
+    }
 
-  footer .row {
-    align-items: start;
-    gap: 8rem;
+    .footer-nav {
+      flex-grow: 1;
+    }
+
+    .row {
+      align-items: start;
+      gap: 8rem;
+    }
+
+    .footer-nav__list {
+      margin: 0;
+    }
   }
 }
